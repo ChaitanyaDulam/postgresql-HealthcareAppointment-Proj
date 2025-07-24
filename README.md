@@ -1,19 +1,19 @@
-# Healthcare Appointment System Database:
+## Healthcare Appointment System Database:
 A structured relational database system developed for managing healthcare appointments, prescriptions, and medications. 
 Designed using PostgreSQL, this system simulates real-world clinic workflows with emphasis on data integrity, normalization, and operational efficiency.
 
-# Project Overview
+## Project Overview
 The Healthcare Appointment System is designed to manage patient-doctor appointments, prescriptions, and medication records in a clinic setting. 
 It addresses real-world constraints such as avoiding double bookings, prescription linkage, and medication traceability.
 
-# Objectives
+## Objectives
 - Design a normalized relational database schema.
 - Implement scheduling with doctor-patient relationships.
 - Manage prescriptions and medications tied to appointments.
 - Ensure referential integrity and minimize redundancy.
 - Provide scalability for future healthcare features.
 
-# Features
+## Features
 - Doctor-patient appointment scheduling
 - Prescription tracking with medication linkage
 - Primary & foreign key constraints for data integrity
@@ -21,7 +21,7 @@ It addresses real-world constraints such as avoiding double bookings, prescripti
 - Pre-defined data insertion scripts and test queries
 - SQL view for simplified appointment access
 
-# Entity-Relationship Design
+## Entity-Relationship Design
 Entities:
 - Doctor
 - Patient
@@ -35,27 +35,27 @@ Relationships:
 - One appointment ↔ many prescriptions
 - One prescription ↔ many medications
 
-# Database Schema
+## Database Schema
 - DBMS: PostgreSQL 17
 - Tables Created: 5 (doctor, patient, appointment, prescription, medication)
 - DDL + DML: Fully included with triggers and sequences
 - View: AppointmentView for detailed appointment data
 - Normalization: Applied up to 3NF
 
-# Technologies Used
+## Technologies Used
 - PostgreSQL – Database engine
 - pgAdmin 4 – SQL GUI for schema management
 - ER Assistant – ERD modeling
 - PL/pgSQL – Triggers and functions
   
-# Setup Instructions
+## Setup Instructions
 1. Install [PostgreSQL](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) and pgAdmin 4
 2. Create a schema named healthcare_appointments
 3. Run the DDL script from ddl.sql to create tables and triggers
 4. Run the DML script from dml.sql to insert sample data
 5. Use AppointmentView to query combined appointment details
 
-## 📊 Sample SQL Queries
+## Sample SQL Queries
 sql
 -- View all upcoming appointments
 SELECT * FROM AppointmentView WHERE status = 'Scheduled';
