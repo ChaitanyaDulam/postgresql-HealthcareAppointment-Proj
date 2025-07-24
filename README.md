@@ -70,4 +70,3 @@ JOIN appointment a ON p.patient_id = a.patient_id
 JOIN prescription pr ON a.appointment_id = pr.appointment_id
 JOIN medication m ON pr.prescription_id = m.prescription_id
 WHERE p.first_name = 'Emily' AND p.last_name = 'Davis';
-<img width="468" height="682" alt="image" src="https://github.com/user-attachments/assets/a9f60217-819a-425e-bc5e-6b27b102cdb7" />
