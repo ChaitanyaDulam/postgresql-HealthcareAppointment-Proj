@@ -34,10 +34,8 @@ Relationships:
 - One patient ↔ many appointments
 - One appointment ↔ many prescriptions
 - One prescription ↔ many medications
-
   <img width="1451" height="905" alt="image" src="https://github.com/user-attachments/assets/bec17fcc-da8a-4a45-aff1-8ddf4a464a12" />
-
-
+  
 ### Database Schema
 - DBMS: PostgreSQL 17
 - Tables Created: 5 (doctor, patient, appointment, prescription, medication)
